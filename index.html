@@ -6,112 +6,135 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-witdh initial-scale=1.0">
+    <link rel="stylesheet"href=web.css>
     <title>William GUÉGAN</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols">
 
 </head>
 
 <body>
 
-<!-- Name and status -->
-<b><h1>William GUÉGAN</h1></b>
-<h2>Étudiant ingénieur à Toulouse INP - ENSEEIHT</h2>
+    <header>
+        <!-- Profil picture -->
+        <img src="/images/avatar.jpg" height="100" alt="Photo de profil" title="Photo de profil" id="avatar">
 
-<!-- Profil picture -->
-<img src="/images/avatar.jpg" height="100" alt="Photo de profil" title="Photo de profil">
-<hr>
+        <!-- Name and status -->
+        <b class="center"><h1>William GUÉGAN</h1></b>
+        <h2 class="center">Étudiant ingénieur Sciences du Numérique<br> Toulouse INP - ENSEEIHT</h2>
+    </header>
 
-<!-- Presenting myself -->
-<div>
-    <ins><h3>Présentation</h3></ins>
-    Blank 
-</div>
+    <main>
+        <!-- Presenting myself -->
+        <div>
+            <i class="material-symbols">person</i>
+            <ins><h3>Présentation</h3></ins>
+            Je m'appelle William GUÉGAN, j'ai 20 ans et j'étudie actuellement à l'ENSEEIHT à Toulouse en vue d'obtenir le diplôme d'ingénieur des Sciences du Numérique. 
+        </div>
 
-<!-- Education -->
-<div>
-    <ins><h3>Parcours académique</h3></ins>
+        <!-- Education -->
+        <div>
+            <i class="material-symbols">school</i>
+            <ins><h3>Parcours académique</h3></ins>
 
-    <p>
-        <b>Tououse INP - ENSEEIHT </b>, 2026 - Présent :
-        <br> 
-        Ingénieur Sciences du numérique 
-    </p>
-
-    <p>
-        <b>Lycée du Parc</b>, 2021-2026 :
-        <ul>
-            <li>CPGE : MP2I - MPI</li>
-            <li>Lycéen : Bac général
+            <p>
+                <b>Tououse INP - ENSEEIHT </b>, 2026 - Présent :
                 <ul>
-                    <li>Mathématiques</li>
-                    <li>Numérique et sciences informatiques</li>
-                    <li>Mathématiques expertes</li>
+                    <li>
+                        Ingénieur Sciences du numérique 
+                    </li>
+                </ul> 
+            </p>
+
+            <p>
+                <b>Lycée du Parc</b>, 2021-2026 :
+                <ul>
+                    <li>CPGE : MP2I - MPI</li>
+                    <li>Lycéen : Bac général
+                        <ul>
+                            <li>Mathématiques</li>
+                            <li>Numérique et sciences informatiques</li>
+                            <li>Mathématiques expertes</li>
+                        </ul>
+                    </li>    
                 </ul>
-            </li>    
-        </ul>
-    </p>
+            </p>
 
-</div>
+        </div>
 
-<!-- Skills -->
-<div>
-    <ins><h3>Compétences</h3></ins>
-    <ul>
-        <li>
-            <b>Programmation</b>
+        <!-- Skills -->
+        <div>
+            <i class="material-symbols">construction</i>
+            <ins><h3>Compétences</h3></ins>
             <ul>
                 <li>
-                    C
+                    Programmation
+                    <ul>
+                        <li>
+                            C
+                        </li>
+                        <li>
+                            Python
+                        </li>
+                        <li>
+                            OCaml
+                        </li>
+                        <li>
+                            HTML
+                        </li>   
+                    </ul>    
                 </li>
+            </ul>
+        </div>
+
+        <!-- Spoken and written languages -->
+        <div>
+            <i class="material-symbols">language</i>
+            <ins><h3>Langues</h3></ins>
+            <ul>
+                <li>Français : Natif</li>
+                <li>Anglais : B1+</li>
+                <li>Chinois (Mandarin/Simplifié) : Débutant</li>
+            </ul>
+        </div>
+
+        <!-- Projects -->
+        <div>
+            <i class="material-symbols">assignment</i>
+            <ins><h3>Projets</h3></ins>
+
+            <ul>
                 <li>
-                    Python
+                    <a href="ressources/TIPE.pdf" download title="Télécharger le résumé du projet">
+                        Correction de distorsion d'image
+                    </a>
                 </li>
-                <li>
-                    OCaml
-                </li>
-                <li>
-                    HTML
-                </li>   
-            </ul>    
-        </li>
-    </ul>
-</div>
+                Dans le cadre du concours d’entrée des Grandes Écoles, j’ai développé un programme qui corrige la distortion d’image en suivant le modèle inverse de distorsion en ne suivant que le paramètre k<sub>1</sub>.
+            </ul>
 
-<!-- Spoken and written languages -->
-<div>
-    <ins><h3>Langues</h3></ins>
-    <ul>
-        <li>Français : Natif</li>
-        <li>Anglais : B1+</li>
-        <li>Chinois (Mandarin/Simplifié) : Débutant</li>
-    </ul>
-</div>
+        </div>
+    </main>
 
-<!-- Projects -->
-<div>
-    <ins><h3>Projets</h3></ins>
-    
-    <ul>
-        <li>
-            Correction de distorsion d'image
-        </li>
-        Dans le cadre du concours d’entrée des Grandes Écoles, j’ai développé un programme qui corrige la distortion d’image en suivant le modèle inverse de distorsion en ne suivant que le paramètre k1.
-    </ul>
-
-</div>
-
-<!-- Contact informations -->
-<hr>
-<div>
-    <ins><h4>Contact</h4></ins>
-    Email : 
-    <a href="mailto:gueganwilliam@protonmail.com"> 
-        gueganwilliam@protonmail.com
-    </a>
-    <br>
-    <a href="https://www.linkedin.com/in/william-gu%C3%A9gan-1ab652436" target="_blank" title="Mon profil Linkedin">
-        Linkedin
-    </a>
-</div>
+    <footer>
+        <!-- Contact informations -->
+        <hr>
+        <div>
+            <ins><h4>Contact</h4></ins>
+            Email : 
+            <a href="mailto:gueganwilliam@protonmail.com" title="Mon adresse email"> 
+                gueganwilliam@protonmail.com
+            </a>
+            <br>
+            <a href="https://www.linkedin.com/in/william-gu%C3%A9gan-1ab652436" target="_blank" title="Mon profil Linkedin">
+                Linkedin
+            </a>
+            <br>
+            <a href="ressources/CV.pdf" download title="Télécharger mon CV">
+                Mon CV 
+            </a>
+            <br>
+            Attention, ce site internet n’est pas finalisé.
+        </div>
+    </footer>
 
 </body>
 

@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 40px; 
+}
+.center{
+    text-align:center;
+}
+#avatar{
+    float:left;
+}
+header{
+    background-color: rgb(242, 242, 242);
+    border-style:solid;
+    padding:10px;
+    border-radius: 10px;
+    display:block;
+}
+footer{
+    display:block;
+}
+img{
+    border-radius: 10px;
+}
+.material-symbols{
+    float:left;
+    padding-right: 4px;
+}
