@@ -1,2 +1,2 @@
-# w2ll25m.github.io
+# williamguegan.github.io
 William GUÉGAN presentation website
