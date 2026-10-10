@@ -3,122 +3,193 @@
 <html>
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-witdh initial-scale=1.0">
     <link rel="stylesheet"href=web.css>
     <title>William GUÉGAN</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols">
-
+    <script src="logic.js"defer></script>
 </head>
 
 <body>
-
-    <header>
-        <!-- Profil picture -->
-        <img src="/images/avatar.jpg" height="100" alt="Photo de profil" title="Photo de profil" id="avatar">
-
-        <!-- Name and status -->
-        <b class="center"><h1>William GUÉGAN</h1></b>
-        <h2 class="center">Étudiant ingénieur Sciences du Numérique<br> Toulouse INP - ENSEEIHT</h2>
-    </header>
+    <div class="topnav_classic">
+        <button class="tablinks" onclick="Change_tab(event, 'presentation')">
+            Home
+        </button>
+        <button class="tablinks" onclick="Change_tab(event, 'courses')">
+            Engineering courses
+        </button>
+        <button class="tablinks" onclick="Change_tab(event, 'mobility')">
+            International mobility
+        </button>
+        <button class="tablinks" onclick="Change_tab(event, 'civic')">
+            Civic engagement
+        </button>
+        <button class="tablinks" onclick="Change_tab(event, 'activities')">
+            Sport and other activities
+        </button>
+        <button class="tablinks" onclick="Change_tab(event, 'contact')">
+            Contact
+        </button>
+    </div>
 
     <main>
         <!-- Presenting myself -->
-        <div>
-            <i class="material-symbols">person</i>
-            <ins><h3>Présentation</h3></ins>
-            Je m'appelle William GUÉGAN, j'ai 20 ans et j'étudie actuellement à l'ENSEEIHT à Toulouse en vue d'obtenir le diplôme d'ingénieur des Sciences du Numérique. 
-        </div>
+        <div class="tabcontent" id="presentation">
 
-        <!-- Education -->
-        <div>
-            <i class="material-symbols">school</i>
-            <ins><h3>Parcours académique</h3></ins>
+            <div id="name_status_box">
+                <!-- Profil picture -->
+                <img src="/images/avatar.jpg" height="100" alt="Photo de profil" title="Photo de profil" id="avatar">
 
-            <p>
-                <b>Tououse INP - ENSEEIHT </b>, 2026 - Présent :
-                <ul>
-                    <li>
-                        Ingénieur Sciences du numérique 
-                    </li>
-                </ul> 
-            </p>
+                <!-- Name and status -->
+                <div id="name_status">
+                    <b class="center"><h1>William GUÉGAN</h1></b>
+                    <h2 class="center">Engineering student in Computer science and Telecommunication<br> Toulouse INP - ENSEEIHT</h2>
+                </div>
+            </div>
+            
+            <div>
+                <i class="material-symbols">person</i>
+                <ins><h3>Presentation</h3></ins>
+                My name is William GUÉGAN, I am an engineering student in Computer Science at ENSEEIHT. 
+            </div>
 
-            <p>
-                <b>Lycée du Parc</b>, 2021-2026 :
-                <ul>
-                    <li>CPGE : MP2I - MPI</li>
-                    <li>Lycéen : Bac général
-                        <ul>
-                            <li>Mathématiques</li>
-                            <li>Numérique et sciences informatiques</li>
-                            <li>Mathématiques expertes</li>
-                        </ul>
-                    </li>    
-                </ul>
-            </p>
+            <!-- Education -->
+            <div>
+                <i class="material-symbols">school</i>
+                <ins><h3>Education</h3></ins>
 
-        </div>
-
-        <!-- Skills -->
-        <div>
-            <i class="material-symbols">construction</i>
-            <ins><h3>Compétences</h3></ins>
-            <ul>
-                <li>
-                    Programmation
+                <p>
+                    <b>Tououse INP - ENSEEIHT </b>, 2026 - Present :
                     <ul>
                         <li>
-                            C
+                            Engineer in Computer Science and Telecommunication
                         </li>
-                        <li>
-                            Python
-                        </li>
-                        <li>
-                            OCaml
-                        </li>
-                        <li>
-                            HTML
-                        </li>   
-                    </ul>    
-                </li>
+                    </ul> 
+                </p>
+
+                <p>
+                    <b>Lycée du Parc</b>, 2021-2026 :
+                    <ul>
+                        <li>CPGE : MP2I - MPI</li>
+                        <li>High school : Baccalauréat Général
+                            <ul>
+                                <li>Maths</li>
+                                <li>Numérique et sciences informatiques</li>
+                                <li>Mathématiques expertes</li>
+                            </ul>
+                        </li>    
+                    </ul>
+                </p>
+
+            </div>
+
+            <!-- Skills -->
+            <div>
+                <i class="material-symbols">construction</i>
+                <ins><h3>Skills</h3></ins>
+                <ul>
+                    <li>
+                        Programming
+                        <ul>
+                            <li>
+                                C
+                            </li>
+                            <li>
+                                Python
+                            </li>
+                            <li>
+                                OCaml
+                            </li>
+                            <li>
+                                HTML
+                            </li>   
+                        </ul>    
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Spoken and written languages -->
+            <div>
+                <i class="material-symbols">language</i>
+                <ins><h3>Languages</h3></ins>
+                <ul>
+                    <li>French : Natif</li>
+                    <li>English : B1+</li>
+                    <li>Chinese (Mandarin/Simplified) : Beginner</li>
+                </ul>
+            </div>
+
+            <!-- Projects -->
+            <div>
+                <i class="material-symbols">assignment</i>
+                <ins><h3>Projets</h3></ins>
+
+                <ul>
+                    <li>
+                        <a href="ressources/TIPE.pdf" target="_blank" title="Télécharger le résumé du projet">
+                            Image distorsion correction
+                        </a>
+                    </li>
+                    During the preparation for the enginnering school (Grandes Écoles) national entrance exam, I developped a program that corrects image distorsion, following the division model of distorsion (only the k<sub>1</sub> parameter). 
+                </ul>
+            </div>
+        </div>
+
+        <!-- Courses taken in school -->
+        <div class="tabcontent" id="courses">
+            <i class="material-symbols">book</i>
+            <ins><h3>Enginnering courses</h3></ins>
+            <ul>
+                <li>Maths</li>
+                <li>Computer science</li>
             </ul>
         </div>
 
-        <!-- Spoken and written languages -->
-        <div>
-            <i class="material-symbols">language</i>
-            <ins><h3>Langues</h3></ins>
+        <!-- International mobility -->
+        <div class="tabcontent" id="mobility">
+            <i class="material-symbols">travel</i>
+            <ins><h3>International mobility</h3></ins>
             <ul>
-                <li>Français : Natif</li>
-                <li>Anglais : B1+</li>
-                <li>Chinois (Mandarin/Simplifié) : Débutant</li>
+                <li>UK</li>
+                <li>China</li>
+                <li>Canada</li>
             </ul>
         </div>
 
-        <!-- Projects -->
-        <div>
-            <i class="material-symbols">assignment</i>
-            <ins><h3>Projets</h3></ins>
-
+        <!-- Civic engagement -->
+        <div class="tabcontent" id="civic">
+            <i class="material-symbols">partner_heart</i>
+            <ins><h3>Civic engagement</h3></ins>
             <ul>
-                <li>
-                    <a href="ressources/TIPE.pdf" download title="Télécharger le résumé du projet">
-                        Correction de distorsion d'image
-                    </a>
-                </li>
-                Dans le cadre du concours d’entrée des Grandes Écoles, j’ai développé un programme qui corrige la distortion d’image en suivant le modèle inverse de distorsion en ne suivant que le paramètre k<sub>1</sub>.
+                <li>Clean walk at Toulouse</li>
+                <li>King-Kong Trial</li>
             </ul>
+        </div>
 
+        <!-- Other activities -->
+        <div class="tabcontent" id="activities">
+            <i class="material-symbols">sports_esports</i>
+            <ins><h3>Other activities</h3></ins>
+            <ul>
+                <li>Ultimate</li>
+                <li>Video games</li>
+            </ul>
+        </div>
+
+        <!-- Career developpement -->
+        <div class="tabcontent" id="career_dev">
+            <i class="material-symbols">person_celebrate</i>
+            <ins><h3>Career developpement</h3></ins>
+            ???
         </div>
     </main>
 
-    <footer>
+    <div class="tabcontent" id="contact">
         <!-- Contact informations -->
-        <hr>
         <div>
-            <ins><h4>Contact</h4></ins>
+            <i class="material-symbols">contacts</i>
+            <ins><h3>Contact</h3></ins>
             Email : 
             <a href="mailto:gueganwilliam@protonmail.com" title="Mon adresse email"> 
                 gueganwilliam@protonmail.com
@@ -127,13 +198,16 @@
             <a href="https://www.linkedin.com/in/william-gu%C3%A9gan-1ab652436" target="_blank" title="Mon profil Linkedin">
                 Linkedin
             </a>
-            <br>
-            <a href="ressources/CV.pdf" download title="Télécharger mon CV">
-                Mon CV 
+        </div>
+    </div>
+
+    <footer>
+        <hr>
+        <a href="ressources/CV.pdf" target="_blank" title="Download my resume (FR)">
+                My resume (FR)
             </a>
             <br>
-            Attention, ce site internet n’est pas finalisé.
-        </div>
+            This site is still in progress !
     </footer>
 
 </body>

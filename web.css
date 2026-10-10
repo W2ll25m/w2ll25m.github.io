@@ -17,26 +17,80 @@ body{
         margin-bottom:40px;
     }
 }
+.material-symbols{
+    float:left;
+    padding-right: 4px;
+}
 .center{
+    display: block;
     text-align:center;
 }
 #avatar{
-    float:left;
+    display: block;
 }
-header{
-    background-color: rgb(242, 242, 242);
+#name_status_box{
+    display: flex;
+    align-items: center;
+    text-align: center;
     border-style:solid;
     padding:10px;
-    border-radius: 10px;
-    display:block;
+    border-radius: 20px;
+}
+#name_status{
+    margin-left: auto;
+    margin-right: auto;
+}
+.topnav_classic{
+    display: flex;
+    overflow: scroll;
+    border: solid; 
+    border-color: rgb(240,240,240);
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+.topnav_classic button {
+  background-color: inherit;
+  height: 100%;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: medium;
+  box-sizing: border-box;
+}
+.topnav_classic button:hover {
+  background-color: #ddd;
+}
+button{
+    margin:auto 0;
+    display: block;
+    box-sizing: border-box;
+    outline: 1px;
+}
+img{
+    border-radius: 20px;
 }
 footer{
     display:block;
 }
-img{
-    border-radius: 10px;
+#courses{
+    display: none;
 }
-.material-symbols{
-    float:left;
-    padding-right: 4px;
+#mobility{
+    display: none;
+}
+#civic{
+    display: none;
+}
+#career_dev{
+    display: none;
+}
+#activities{
+    display: none;
+}
+#contact{
+    display: none;
 }
