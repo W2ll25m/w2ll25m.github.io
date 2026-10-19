@@ -1,6 +1,9 @@
 console.log("logic.js successfully charged !")
 
 function Change_tab(evt,topnav){
+
+    console.log("Tab changed to " + topnav)
+
     var i, tabcontent, tablinks;
 
     tabcontent = document.getElementsByClassName("tabcontent");

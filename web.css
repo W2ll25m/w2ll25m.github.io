@@ -8,15 +8,6 @@ body{
     margin-bottom:40px;
     margin-top:40px;
 }
-@media screen and (max-width:1050px){
-    body{
-        width:auto;
-        margin-left:40px;
-        margin-right:40px; 
-        margin-top:40px;
-        margin-bottom:40px;
-    }
-}
 .material-symbols{
     float:left;
     padding-right: 4px;
@@ -32,9 +23,9 @@ body{
     display: flex;
     align-items: center;
     text-align: center;
-    border-style:solid;
     padding:10px;
     border-radius: 20px;
+    box-shadow: 0 0 15px 5px rgb(240,240,240);
 }
 #name_status{
     margin-left: auto;
@@ -42,12 +33,12 @@ body{
 }
 .topnav_classic{
     display: flex;
-    overflow: scroll;
-    border: solid; 
-    border-color: rgb(240,240,240);
+    overflow-x: auto;
     border-radius: 20px;
-    margin-bottom: 20px;
+    margin: 15px;
+    margin-bottom: 40px;
     box-sizing: border-box;
+    box-shadow: 0 0 15px 5px rgb(240,240,240);
 }
 .topnav_classic button {
   background-color: inherit;
@@ -75,6 +66,7 @@ img{
 }
 footer{
     display:block;
+    padding: 20px;
 }
 #courses{
     display: none;
@@ -93,4 +85,29 @@ footer{
 }
 #contact{
     display: none;
+}
+.tabcontent{
+    border-radius: 20px;
+    padding: 40px;
+    margin: 15px;
+    box-shadow: 0 0 15px 5px rgb(240,240,240);
+}
+@media screen and (max-width:1050px){
+    body{
+        width:auto;
+    }
+    .tabcontent{
+        margin: 15px;
+        padding: 5px;
+    }
+    .topnav_classic{
+        margin-top: -20px;
+        margin-bottom: 25px;
+    }
+    #name_status_box{
+        flex-direction: column;
+        gap: 15px;
+        padding-top: 20px;
+        box-shadow: none;
+    }
 }
