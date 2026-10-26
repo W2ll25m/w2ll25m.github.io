@@ -12,29 +12,31 @@
 </head>
 
 <body>
-    <div class="topnav_classic">
-        <button class="tablinks" onclick="Change_tab(event, 'presentation')">
+    <nav class="topnav_classic">
+        <ul class="topnav_links">
+        <li><button class="tablinks" onclick="Change_tab(event, 'presentation')">
             Home
-        </button>
-        <button class="tablinks" onclick="Change_tab(event, 'courses')">
+        </button></li>
+        <li><button class="tablinks" onclick="Change_tab(event, 'courses')">
             Engineering courses
-        </button>
-        <button class="tablinks" onclick="Change_tab(event, 'mobility')">
+        </button></li>
+        <li><button class="tablinks" onclick="Change_tab(event, 'mobility')">
             International mobility
-        </button>
-        <button class="tablinks" onclick="Change_tab(event, 'civic')">
+        </button></li>
+        <li><button class="tablinks" onclick="Change_tab(event, 'civic')">
             Civic engagement
-        </button>
-        <button class="tablinks" onclick="Change_tab(event, 'activities')">
+        </button></li>
+        <li><button class="tablinks" onclick="Change_tab(event, 'activities')">
             Sport and other activities
-        </button>
-        <button class="tablinks" onclick="Change_tab(event, 'career_dev')">
+        </button></li>
+        <li><button class="tablinks" onclick="Change_tab(event, 'career_dev')">
             Career and developpement
-        </button>
-        <button class="tablinks" onclick="Change_tab(event, 'contact')">
+        </button></li>
+        <li><button class="tablinks" onclick="Change_tab(event, 'contact')">
             Contact
-        </button>
-    </div>
+        </button></li>
+        </ul>
+    </nav>
 
     <main>
         <!-- Presenting myself -->
@@ -42,7 +44,7 @@
 
             <div id="name_status_box">
                 <!-- Profil picture -->
-                <img src="/images/avatar.jpg" height="100" alt="My profile picture" title="My profile picture" id="avatar">
+                <img src="/images/avatar.jpg" alt="My profile picture" title="My profile picture" id="avatar">
 
                 <!-- Name and status -->
                 <div id="name_status">
@@ -51,17 +53,25 @@
                 </div>
             </div>
             
-            <div>
-                <i class="material-symbols">person</i>
-                <ins><h3>Presentation</h3></ins>
-                My name is William GUÉGAN, I am an engineering student in Computer Science at ENSEEIHT. 
+            <!-- Presentation -->
+            <div class="subbox">
+                <div class="wrap">
+                    <div>
+                        <i class="material-symbols">person</i>
+                        <u><h2>Presentation</h2></u> 
+                    </div>
+                    <p>
+                        My name is William GUÉGAN, I am an engineering student in Computer Science at ENSEEIHT.
+                    </p>
+                </div>
             </div>
 
             <!-- Education -->
-            <div>
-                <i class="material-symbols">school</i>
-                <ins><h3>Education</h3></ins>
-
+            <div class="subbox">
+                <div>
+                    <i class="material-symbols">school</i>
+                    <u><h2>Education</h2></u>
+                </div> 
                 <p>
                     <b>Tououse INP - ENSEEIHT </b>, 2026 - Present :
                     <ul>
@@ -70,7 +80,6 @@
                         </li>
                     </ul> 
                 </p>
-
                 <p>
                     <b>Lycée du Parc</b>, 2021-2026 :
                     <ul>
@@ -83,14 +92,15 @@
                             </ul>
                         </li>    
                     </ul>
-                </p>
-
+                </p> 
             </div>
 
             <!-- Skills -->
-            <div>
-                <i class="material-symbols">construction</i>
-                <ins><h3>Skills</h3></ins>
+            <div class="subbox">
+                <div>
+                    <i class="material-symbols">construction</i>
+                    <u><h2>Skills</h2></u>
+                </div>
                 <ul>
                     <li>
                         Programming
@@ -113,9 +123,11 @@
             </div>
 
             <!-- Spoken and written languages -->
-            <div>
-                <i class="material-symbols">language</i>
-                <ins><h3>Languages</h3></ins>
+            <div class="subbox">
+                <div>
+                    <i class="material-symbols">language</i>
+                    <u><h2>Languages</h2></u>
+                </div>
                 <ul>
                     <li>French : Natif</li>
                     <li>English : B1+</li>
@@ -124,10 +136,11 @@
             </div>
 
             <!-- Projects -->
-            <div>
-                <i class="material-symbols">assignment</i>
-                <ins><h3>Projets</h3></ins>
-
+            <div class="subbox">
+                <div>
+                    <i class="material-symbols">assignment</i>
+                    <u><h2>Projets</h2></u>
+                </div>
                 <ul>
                     <li>
                         <a href="ressources/TIPE.pdf" target="_blank" title="Download the summary of my project">
@@ -137,13 +150,28 @@
                     During the preparation for the enginnering school (Grandes Écoles) national entrance exam, I developped a program that corrects image distorsion, following the division model of distorsion (only the k<sub>1</sub> parameter). 
                 </ul>
             </div>
+            <!-- My resume -->
+            <div class="subbox">
+                <div>
+                    <i class="material-symbols">task</i>
+                    <u><h2>Resume</h2></u>
+                </div>
+                <ul>
+                    <li>
+                        <a href="ressources/CV.pdf" target="_blank" title="Download my resume (FR)">My CV (FR)</a>
+                    </li>
+                    <li>
+                        My resume (EN) (comming soon...)
+                    </li>
+                </ul>
+            </div>
         </div>
 
         <!-- Courses taken in school -->
         <div class="tabcontent" id="courses">
             <div>
                 <i class="material-symbols">book</i>
-                <ins><h3>Enginnering courses</h3></ins>
+                <u><h2>Enginnering courses</h2></u>
             </div>
             <ul>
                 <li>Maths</li>
@@ -155,32 +183,64 @@
         <div class="tabcontent" id="mobility">
             <div>
                 <i class="material-symbols">travel</i>
-                <ins><h3>International mobility</h3></ins>
+                <u><h2>International mobility</h2></u>
             </div>
-            <ul>
-                <li>UK</li>
-                <li>China</li>
-                <li>Canada</li>
-            </ul>
+            
+            <div class="subbox">
+                <u><h2>China</h2></u>
+                <p>
+                    I would love to go in a chinese university for my international mobility as the country is currently the leader in new technologies.
+                </p>
+            </div>
+
+            <div class="subbox">
+                <u><h2>Spain</h2></u>
+                <p>
+                    I would like to go in a spanish university for my international mobility as the country is near France but the culture is still diffrent.
+                </p>
+            </div>
+
+            <div class="subbox">
+                <u><h2>Germany</h2></u>
+                <p>
+                    I am also interested into going to a german university for my international mobility.
+                </p>
+            </div>
         </div>
 
         <!-- Civic engagement -->
         <div class="tabcontent" id="civic">
             <div>
                 <i class="material-symbols">partner_heart</i>
-                <ins><h3>Civic engagement</h3></ins>
+                <u><h2>Civic engagement</h2></u>
             </div>
-            <ul>
-                <li>Clean walk at Toulouse</li>
-                <li>King-Kong Trial</li>
-            </ul>
+            <div class="subbox">
+                <u><h2>Clean Walk</h2></u>
+                <p>
+                    I did a clean walk at Toulouse to be aware of the problem of public waste.
+                </p>
+            </div>
+
+            <div class="subbox">
+                <u><h2>King Kong trial</h2></u>
+                <p>
+                    We assisted to the King Kong trial at school to be more alert on sexual violences.
+                </p>
+            </div>
+
+            <div class="subbox">
+                <u><h2>Tutor at a high school</h2></u>
+                <p>
+                    I am a tutor at a professionnal high school in Toulouse to support students for their educational guidance.
+                </p>
+            </div>
         </div>
 
         <!-- Other activities -->
         <div class="tabcontent" id="activities">
             <div>
                 <i class="material-symbols">sports_esports</i>
-                <ins><h3>Other activities</h3></ins>
+                <u><h2>Sport and other activities</h2></u>
             </div>
             <ul>
                 <li>Ultimate</li>
@@ -192,7 +252,7 @@
         <div class="tabcontent" id="career_dev">
             <div>
                 <i class="material-symbols">person_celebrate</i>
-                <ins><h3>Career developpement</h3></ins>
+                <u><h2>Career developpement</h2></u>
             </div>
             ???
         </div>
@@ -202,7 +262,7 @@
         <!-- Contact informations -->
         <div>
             <i class="material-symbols">contacts</i>
-            <ins><h3>Contact</h3></ins>
+            <u><h2>Contact</h2></u>
         </div>
         Email : 
         <a href="mailto:gueganwilliam@protonmail.com" title="My Email"> 
@@ -213,17 +273,6 @@
             Linkedin
         </a>
     </div>
-
-    <footer>
-        <hr>
-        <a href="ressources/CV.pdf" target="_blank" title="Download my resume (FR)">
-            My CV (FR)
-        </a>
-        <br>
-        My resume (EN) (comming soon...)
-        <br>
-        This site is still in progress !
-    </footer>
 
 </body>
 
