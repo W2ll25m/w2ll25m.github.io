@@ -119,6 +119,7 @@ footer{
     .tabcontent{
         margin: 15px;
         padding: 15px;
+        font-size: 1.1em;
     }
     .subbox{
         margin: 15px;
@@ -142,11 +143,11 @@ footer{
     padding: 0;
     display: block;                 
     align-items: center;           
-}
-.topnav_links li {
-    flex: 1 1 0;                     
-    min-width: 90px;                
-    display: flex;
-    border-bottom: 1px solid;
-}
+    }
+    .topnav_links li {
+        flex: 1 1 0;                     
+        min-width: 90px;                
+        display: flex;
+        border-bottom: 1px solid;
+    }
 }
