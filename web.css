@@ -178,6 +178,16 @@ footer{
         align-items: normal;
         justify-content: right;
     }
+    .subbox_full_img{
+        margin: 15px;
+        padding: 15px;
+        font-size: 1em;
+    }
+    .subbox_full_img_no_border{
+        margin: 15px;
+        padding: 15px;
+        font-size: 1em;
+    }
     .topnav_classic{
         margin-bottom: 25px;
         font-size: 1em;
@@ -206,7 +216,6 @@ footer{
         border-bottom: 1px solid;
     }
     .full_img_content_side{
-        width: 300px;
         max-width: 100%;
     }
 }
